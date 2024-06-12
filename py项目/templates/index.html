@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my site</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">首页</a></li>
+                <li><a href="{{ url_for('about') }}">关于我们</a></li>
+                <li><a href="{{ url_for('login')}}">登录</a></li>
+                <li><a href="{{ url_for('register')}}">注册</a></li>
+                <li><a href="{{ url_for('survey') }}">问卷调查</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+        <h1>欢迎来到我的网站</h1>
+        <img src="{{ url_for('static', filename='img/img01.jpg') }}">
+        <!-- 其他首页内容 -->
+        </section>
+
+        <!-- 在下面添加新的section元素 -->
+        <section id="introduction">
+        <h2>网页介绍</h2>
+        <p>这里是我的个人网页，用于调查当代年轻人的父辈患慢性疾病的情况，该调查旨在了解父辈身体健康状况，
+            为中国即将到来或已经到来的老龄化问题做好准备。</p>
+        </section>
+    </main>
+</body>
+</html>

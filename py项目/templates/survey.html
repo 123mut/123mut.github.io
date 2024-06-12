@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>调查问卷</title>
+</head>
+<body>
+    <a href="{{ url_for('index') }}">回到首页</a>
+    <form method="post" action="/survey_submit">
+        {% for question in questions %}
+            <h2>{{ question.text }}</h2>
+            <ul>
+                {% for option in question.options %}
+                    <li>
+                        <input type="radio" name="question_{{ question.id }}" value="{{ option }}">
+                        {{ option }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

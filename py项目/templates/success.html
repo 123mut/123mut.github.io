@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问卷调查结果</title>
+</head>
+<body>
+    <a href="{{ url_for('index') }}">回到首页</a>
+    {% for graph in graphs %}
+        {{ graph|safe }}
+    {% endfor %}
+</body>
+</html>
