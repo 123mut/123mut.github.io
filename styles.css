@@ -1,0 +1,46 @@
+/* 设置导航栏的背景颜色为深灰色，设置内边距为10像素 */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+/* 设置导航链接列表样式为无，设置外边距和内边距为0，设置为flex布局，并且在主轴上均匀分布各项 */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+/* 设置导航链接列表项中的链接样式，包括颜色为白色，无下划线，内边距为10像素，设置为块状元素 */
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+/* 鼠标悬停在导航链接上时的样式，设置背景颜色为深灰色 */
+.nav-links li a:hover {
+    background-color: #666;
+}
+
+#introduction {
+    position: absolute;
+    top: 200px; /* 调整距离顶部的位置 */
+    right: 50px; /* 调整距离右侧的位置 */
+    width: 30%; /* 调整宽度以适应页面设计 */
+    background-color: #f9f9f9; /* 背景颜色，可以根据需要调整 */
+    padding: 10px; /* 内边距，可以根据需要调整 */
+    border: 1px solid #ddd; /* 边框样式，可以根据需要调整 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果，可以根据需要调整 */
+    z-index: 999; /* 确保在其他元素上方显示 */
+}
+
+#introduction h2 {
+    font-size: 1.5em;
+    color: #333; /* 标题颜色，可以根据需要调整 */
+}
+
+#introduction p {
+    font-size: 1em;
+    color: #666; /* 段落文字颜色，可以根据需要调整 */
+}
